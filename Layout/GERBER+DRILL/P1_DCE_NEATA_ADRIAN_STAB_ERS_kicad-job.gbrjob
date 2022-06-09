@@ -1,0 +1,115 @@
+{
+  "Header":
+  {
+    "GenerationSoftware":
+    {
+      "Vendor":      "KiCad",
+      "Application": "Pcbnew",
+      "Version":     "(5.1.10)-1"
+    },
+    "CreationDate":  "2021-12-12T15:32:54+02:00"
+  },
+  "GeneralSpecs":
+  {
+    "ProjectId":
+    {
+      "Name": "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad",
+      "GUID": "50315f44-4345-45f4-9e45-4154415f4144",
+      "Revision": "rev?"
+    },
+    "Size":
+    {
+      "X": 40.050,
+      "Y": 40.050
+    },
+    "LayerNumber": 2,
+    "BoardThickness":  1.500
+  },
+  "DesignRules":
+  [
+    {
+      "Layers": "Outer",
+      "PadToPad":  0.305,
+      "PadToTrack":  0.305,
+      "TrackToTrack":  0.305,
+      "MinLineWidth":  0.508,
+      "TrackToRegion":  0.305,
+      "RegionToRegion":  0.305
+    }
+  ],
+  "FilesAttributes":
+  [
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-F_Cu.gbr",
+      "FileFunction":  "Copper,L1,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-B_Cu.gbr",
+      "FileFunction":  "Copper,L2,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-F_Paste.gbr",
+      "FileFunction":  "SolderPaste,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-F_SilkS.gbr",
+      "FileFunction":  "Legend,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-F_Mask.gbr",
+      "FileFunction":  "SolderMask,Top",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-B_Mask.gbr",
+      "FileFunction":  "SolderMask,Bot",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-Edge_Cuts.gbr",
+      "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "P1_DCE_NEATA_ADRIAN_STAB_ERS_kicad-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
+      "FilePolarity":  "Positive"
+    }
+  ],
+  "MaterialStackup":
+  [
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer F.SilkS"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer F.Paste"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer F.Mask"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer F.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L1/L2"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer B.Cu"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer B.Mask"
+    }
+  ]
+}

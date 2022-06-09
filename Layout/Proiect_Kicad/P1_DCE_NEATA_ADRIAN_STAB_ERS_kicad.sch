@@ -1,0 +1,953 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Stab_ERS_NEATA_ADRIAN"
+Date "2021-11-18"
+Rev "v1.0"
+Comp "UPB_ETTI"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC857 Q1
+U 1 1 619676F8
+P 1450 1900
+F 0 "Q1" H 1641 1946 50  0000 L CNN
+F 1 "BC857" H 1641 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1650 1825 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 1450 1900 50  0001 L CNN
+	1    1450 1900
+	1    0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 6196854D
+P 1050 1350
+F 0 "D3" V 1096 1270 50  0000 R CNN
+F 1 "1N4148WS" V 950 1300 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 1050 1175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1050 1350 50  0001 C CNN
+	1    1050 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 6196997A
+P 1050 950
+F 0 "D2" V 1096 870 50  0000 R CNN
+F 1 "1N4148WS" V 950 900 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 1050 775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1050 950 50  0001 C CNN
+	1    1050 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 6196A85F
+P 1550 1000
+F 0 "R15" H 1620 1046 50  0000 L CNN
+F 1 "150" H 1620 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 1000 50  0001 C CNN
+F 3 "~" H 1550 1000 50  0001 C CNN
+	1    1550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 6196B657
+P 1050 2350
+F 0 "R16" H 1120 2396 50  0000 L CNN
+F 1 "2k" H 1120 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 980 2350 50  0001 C CNN
+F 3 "~" H 1050 2350 50  0001 C CNN
+	1    1050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BZX84Cxx Z1
+U 1 1 6196C1E5
+P 1550 2500
+F 0 "Z1" V 1504 2580 50  0000 L CNN
+F 1 "BZX84-B3V0" V 1650 2550 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 1550 2325 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" H 1550 2500 50  0001 C CNN
+	1    1550 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 700  1550 850 
+Wire Wire Line
+	1050 800  1050 700 
+Wire Wire Line
+	1050 2200 1050 1900
+Wire Wire Line
+	1550 1150 1550 1700
+$Comp
+L Device:LED LED1
+U 1 1 619719A3
+P 1050 2750
+F 0 "LED1" V 1089 2632 50  0000 R CNN
+F 1 "LED" V 998 2632 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1050 2750 50  0001 C CNN
+F 3 "~" H 1050 2750 50  0001 C CNN
+	1    1050 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 2600 1050 2500
+Wire Wire Line
+	1550 700  1050 700 
+Wire Wire Line
+	1050 1200 1050 1100
+Wire Wire Line
+	1250 1900 1050 1900
+Wire Wire Line
+	1050 1500 1050 1900
+Connection ~ 1050 1900
+Wire Wire Line
+	1550 2950 1050 2950
+Wire Wire Line
+	1050 2950 1050 2900
+$Comp
+L power:GND #PWR03
+U 1 1 6197EC4C
+P 1050 3050
+F 0 "#PWR03" H 1050 2800 50  0001 C CNN
+F 1 "GND" H 1055 2877 50  0000 C CNN
+F 2 "" H 1050 3050 50  0001 C CNN
+F 3 "" H 1050 3050 50  0001 C CNN
+	1    1050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3050 1050 2950
+Connection ~ 1050 2950
+Wire Notes Line
+	500  550  2100 550 
+Wire Notes Line
+	2100 550  2100 3350
+Wire Notes Line
+	2100 3350 500  3350
+Wire Notes Line
+	500  3350 500  550 
+Wire Wire Line
+	1550 2300 1550 2350
+Wire Wire Line
+	1550 2100 1550 2300
+Connection ~ 1550 2300
+Wire Wire Line
+	1550 2650 1550 2950
+Text GLabel 1750 2300 2    50   Input ~ 0
+Vref
+Wire Wire Line
+	1550 2300 1750 2300
+$Comp
+L Device:R R1
+U 1 1 619900D7
+P 3150 850
+F 0 "R1" H 3220 896 50  0000 L CNN
+F 1 "3k3" H 3220 805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 850 50  0001 C CNN
+F 3 "~" H 3150 850 50  0001 C CNN
+	1    3150 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6199088A
+P 3950 850
+F 0 "R2" H 4020 896 50  0000 L CNN
+F 1 "2k" H 4020 805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 850 50  0001 C CNN
+F 3 "~" H 3950 850 50  0001 C CNN
+	1    3950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61991C80
+P 4600 850
+F 0 "R3" H 4670 896 50  0000 L CNN
+F 1 "2k" H 4670 805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4530 850 50  0001 C CNN
+F 3 "~" H 4600 850 50  0001 C CNN
+	1    4600 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6199200D
+P 6350 850
+F 0 "R4" H 6420 896 50  0000 L CNN
+F 1 "300" H 6420 805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6280 850 50  0001 C CNN
+F 3 "~" H 6350 850 50  0001 C CNN
+	1    6350 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 650  6350 700 
+Wire Wire Line
+	4600 700  4600 650 
+Connection ~ 4600 650 
+Wire Wire Line
+	3950 700  3950 650 
+Connection ~ 3950 650 
+Wire Wire Line
+	3950 650  4600 650 
+Wire Wire Line
+	3150 700  3150 650 
+Wire Wire Line
+	3150 650  3950 650 
+Wire Wire Line
+	4600 650  5550 650 
+$Comp
+L Diode:1N4148 D1
+U 1 1 6199D704
+P 5550 850
+F 0 "D1" V 5596 770 50  0000 R CNN
+F 1 "1N4148WS" V 5505 770 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 5550 675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5550 850 50  0001 C CNN
+	1    5550 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 700  5550 650 
+Connection ~ 5550 650 
+Wire Wire Line
+	5550 650  6350 650 
+$Comp
+L Transistor_BJT:BC847 Q2
+U 1 1 619A0429
+P 3250 2650
+F 0 "Q2" H 3441 2696 50  0000 L CNN
+F 1 "BC847" H 3441 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 2575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3250 2650 50  0001 L CNN
+	1    3250 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 619A56E9
+P 3150 3000
+F 0 "#PWR06" H 3150 2750 50  0001 C CNN
+F 1 "GND" H 3155 2827 50  0000 C CNN
+F 2 "" H 3150 3000 50  0001 C CNN
+F 3 "" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3000 3150 2850
+$Comp
+L Transistor_BJT:BC847 Q5
+U 1 1 619A67CA
+P 4200 2350
+F 0 "Q5" H 4391 2396 50  0000 L CNN
+F 1 "BC847" H 4391 2305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 2275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4200 2350 50  0001 L CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q4
+U 1 1 619AA422
+P 3850 1600
+F 0 "Q4" H 4041 1646 50  0000 L CNN
+F 1 "BC847" H 3650 1450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 1525 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3850 1600 50  0001 L CNN
+	1    3850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q7
+U 1 1 619AFF7A
+P 5450 1350
+F 0 "Q7" H 5641 1396 50  0000 L CNN
+F 1 "BC847" H 5641 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5650 1275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5450 1350 50  0001 L CNN
+	1    5450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q6
+U 1 1 619B5F52
+P 6450 1350
+F 0 "Q6" H 6641 1396 50  0000 L CNN
+F 1 "BC847" H 6641 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6650 1275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 6450 1350 50  0001 L CNN
+	1    6450 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1150 6350 1050
+Wire Wire Line
+	5550 1150 5550 1000
+$Comp
+L Transistor_BJT:BC847 Q3
+U 1 1 619BADCC
+P 4700 1600
+F 0 "Q3" H 4891 1646 50  0000 L CNN
+F 1 "BC847" H 4450 1450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4900 1525 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4700 1600 50  0001 L CNN
+	1    4700 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1400 4600 1100
+Wire Wire Line
+	3150 2350 4000 2350
+Connection ~ 3150 2350
+Wire Wire Line
+	3150 2350 3150 2450
+Wire Wire Line
+	3950 1800 4300 1800
+Wire Wire Line
+	4300 2150 4300 1800
+Connection ~ 4300 1800
+Wire Wire Line
+	4300 1800 4600 1800
+Text GLabel 3450 1600 0    50   Input ~ 0
+Vref
+Wire Wire Line
+	3650 1600 3450 1600
+Text GLabel 5100 1600 2    50   Input ~ 0
+Vref2
+Wire Wire Line
+	5100 1600 4900 1600
+$Comp
+L Device:R R6
+U 1 1 619C61A9
+P 4300 2800
+F 0 "R6" H 4370 2846 50  0000 L CNN
+F 1 "175" H 4370 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4230 2800 50  0001 C CNN
+F 3 "~" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2650 4300 2550
+Wire Wire Line
+	4300 2950 4300 3000
+Wire Wire Line
+	3450 2650 4300 2650
+Connection ~ 4300 2650
+Wire Wire Line
+	5550 1550 5950 1550
+$Comp
+L Transistor_BJT:BC847 Q8
+U 1 1 619C9DA2
+P 5850 2100
+F 0 "Q8" H 6041 2146 50  0000 L CNN
+F 1 "BC847" H 6041 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6050 2025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5850 2100 50  0001 L CNN
+	1    5850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1900 5950 1550
+Connection ~ 5950 1550
+Wire Wire Line
+	5950 1550 6350 1550
+Wire Wire Line
+	5650 2100 3150 2100
+Connection ~ 3150 2100
+Wire Wire Line
+	3150 2100 3150 2350
+$Comp
+L Device:R R8
+U 1 1 619CD95B
+P 5950 2700
+F 0 "R8" H 6020 2746 50  0000 L CNN
+F 1 "175" H 6020 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 2700 50  0001 C CNN
+F 3 "~" H 5950 2700 50  0001 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2550 5950 2300
+$Comp
+L power:GND #PWR08
+U 1 1 619CF264
+P 5950 3000
+F 0 "#PWR08" H 5950 2750 50  0001 C CNN
+F 1 "GND" H 5955 2827 50  0000 C CNN
+F 2 "" H 5950 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3000 5950 2850
+Wire Wire Line
+	6650 1350 6650 1100
+Wire Wire Line
+	6650 1100 4600 1100
+Connection ~ 4600 1100
+Wire Wire Line
+	4600 1100 4600 1000
+Text GLabel 6700 1050 2    50   Input ~ 0
+Vdif
+Wire Wire Line
+	6700 1050 6350 1050
+Connection ~ 6350 1050
+Wire Wire Line
+	6350 1050 6350 1000
+Text Notes 7000 3200 2    50   ~ 10
+Amplificatorul de eroare\n
+Wire Notes Line
+	7100 550  2200 550 
+Connection ~ 3150 650 
+Wire Wire Line
+	2400 650  3150 650 
+$Comp
+L power:VDC #PWR02
+U 1 1 619EB780
+P 1050 700
+F 0 "#PWR02" H 1050 600 50  0001 C CNN
+F 1 "VDC" H 900 750 50  0000 C CNN
+F 2 "" H 1050 700 50  0001 C CNN
+F 3 "" H 1050 700 50  0001 C CNN
+	1    1050 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDC #PWR05
+U 1 1 619EC51D
+P 2400 650
+F 0 "#PWR05" H 2400 550 50  0001 C CNN
+F 1 "VDC" H 2300 650 50  0000 C CNN
+F 2 "" H 2400 650 50  0001 C CNN
+F 3 "" H 2400 650 50  0001 C CNN
+	1    2400 650 
+	1    0    0    -1  
+$EndComp
+Connection ~ 1050 700 
+$Comp
+L Transistor_BJT:BC847 Q9
+U 1 1 619F088D
+P 1000 4100
+F 0 "Q9" H 1191 4146 50  0000 L CNN
+F 1 "BC847" H 1191 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1200 4025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 1000 4100 50  0001 L CNN
+	1    1000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 619F2A8B
+P 1100 5250
+F 0 "R5" H 1170 5296 50  0000 L CNN
+F 1 "16k" H 1170 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1030 5250 50  0001 C CNN
+F 3 "~" H 1100 5250 50  0001 C CNN
+	1    1100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 619F39D4
+P 1100 5950
+F 0 "R7" H 1170 5996 50  0000 L CNN
+F 1 "3k57" H 1170 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1030 5950 50  0001 C CNN
+F 3 "~" H 1100 5950 50  0001 C CNN
+	1    1100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q14
+U 1 1 619F46F6
+P 1550 5650
+F 0 "Q14" H 1741 5696 50  0000 L CNN
+F 1 "BC847" H 1741 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1750 5575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 1550 5650 50  0001 L CNN
+	1    1550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 619F57F1
+P 1650 5250
+F 0 "R11" H 1720 5296 50  0000 L CNN
+F 1 "4k7" H 1720 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1580 5250 50  0001 C CNN
+F 3 "~" H 1650 5250 50  0001 C CNN
+	1    1650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 619F679C
+P 1650 4000
+F 0 "R10" H 1720 4046 50  0000 L CNN
+F 1 "4k7" H 1720 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1580 4000 50  0001 C CNN
+F 3 "~" H 1650 4000 50  0001 C CNN
+	1    1650 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 750  4100 0    50   Input ~ 0
+Vref
+Wire Wire Line
+	800  4100 750  4100
+Wire Wire Line
+	1100 5400 1100 5650
+Wire Wire Line
+	1350 5650 1100 5650
+Connection ~ 1100 5650
+Wire Wire Line
+	1100 5650 1100 5800
+$Comp
+L power:GND #PWR04
+U 1 1 61A0490E
+P 1100 6200
+F 0 "#PWR04" H 1100 5950 50  0001 C CNN
+F 1 "GND" H 1105 6027 50  0000 C CNN
+F 2 "" H 1100 6200 50  0001 C CNN
+F 3 "" H 1100 6200 50  0001 C CNN
+	1    1100 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 6200 1100 6100
+Wire Wire Line
+	1650 6200 1100 6200
+Wire Wire Line
+	1650 5850 1650 6200
+Connection ~ 1100 6200
+Wire Wire Line
+	700  3700 1100 3700
+Wire Wire Line
+	1100 3700 1100 3900
+Wire Wire Line
+	1650 3850 1650 3700
+Wire Wire Line
+	1650 3700 1100 3700
+Connection ~ 1100 3700
+Wire Wire Line
+	1650 5400 1650 5450
+Wire Wire Line
+	1650 4150 1650 4200
+$Comp
+L Transistor_BJT:BC857 Q12
+U 1 1 61A130B1
+P 2050 4200
+F 0 "Q12" H 2241 4154 50  0000 L CNN
+F 1 "BC857" H 2241 4245 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2250 4125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 2050 4200 50  0001 L CNN
+	1    2050 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1850 4200 1650 4200
+Wire Wire Line
+	2150 4000 2150 3700
+Wire Wire Line
+	2150 3700 1650 3700
+Connection ~ 1650 3700
+$Comp
+L Transistor_BJT:BC857 Q13
+U 1 1 61A188EC
+P 2400 4500
+F 0 "Q13" H 2591 4454 50  0000 L CNN
+F 1 "BC857" H 2591 4545 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 4425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 2400 4500 50  0001 L CNN
+	1    2400 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2200 4500 2150 4500
+Wire Wire Line
+	2150 4400 2150 4500
+Text GLabel 2100 4500 0    50   Input ~ 0
+Vdif
+Wire Wire Line
+	2100 4500 2150 4500
+Connection ~ 2150 4500
+Wire Wire Line
+	2500 4300 2500 3700
+Wire Wire Line
+	2500 3700 2150 3700
+Connection ~ 2150 3700
+$Comp
+L Transistor_BJT:BC847 Q10
+U 1 1 61A34E54
+P 3200 3800
+F 0 "Q10" V 3528 3800 50  0000 C CNN
+F 1 "MJD44E3T4G" V 3437 3800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3400 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3200 3800 50  0001 L CNN
+	1    3200 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 3700 2800 3700
+Connection ~ 2500 3700
+$Comp
+L Transistor_BJT:BC847 Q11
+U 1 1 61A3B2AD
+P 3000 4300
+F 0 "Q11" V 3328 4300 50  0000 C CNN
+F 1 "BC847" V 3237 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 4225 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3000 4300 50  0001 L CNN
+	1    3000 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 4200 2800 3700
+Connection ~ 2800 3700
+Wire Wire Line
+	2800 3700 2500 3700
+Wire Wire Line
+	3200 4200 3200 4000
+Wire Wire Line
+	2500 4700 3000 4700
+Wire Wire Line
+	3000 4700 3000 4500
+Wire Wire Line
+	1100 4300 1100 5100
+Wire Wire Line
+	1650 4200 1650 4950
+Connection ~ 1650 4200
+$Comp
+L Device:R R9
+U 1 1 61A5428A
+P 3750 3700
+F 0 "R9" V 3543 3700 50  0000 C CNN
+F 1 "1.5" V 3634 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3680 3700 50  0001 C CNN
+F 3 "~" H 3750 3700 50  0001 C CNN
+	1    3750 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q15
+U 1 1 61A57880
+P 3500 4850
+F 0 "Q15" V 3735 4850 50  0000 C CNN
+F 1 "BC847" V 3826 4850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 4775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3500 4850 50  0001 L CNN
+	1    3500 4850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3500 4650 3500 3700
+Wire Wire Line
+	3400 3700 3500 3700
+Connection ~ 3500 3700
+Wire Wire Line
+	3500 3700 3600 3700
+Wire Wire Line
+	3700 4950 4100 4950
+Wire Wire Line
+	4100 4950 4100 3700
+Wire Wire Line
+	4100 3700 3900 3700
+Wire Wire Line
+	3300 4950 1650 4950
+Connection ~ 1650 4950
+Wire Wire Line
+	1650 4950 1650 5100
+$Comp
+L Device:R R12
+U 1 1 61A6840C
+P 4500 4000
+F 0 "R12" H 4570 4046 50  0000 L CNN
+F 1 "32.4k" H 4570 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 4000 50  0001 C CNN
+F 3 "~" H 4500 4000 50  0001 C CNN
+	1    4500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RPOT1
+U 1 1 61A72528
+P 4500 4450
+F 0 "RPOT1" H 4800 4350 50  0000 R CNN
+F 1 "50k" H 4700 4250 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 4500 4450 50  0001 C CNN
+F 3 "~" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4300 4500 4250
+Wire Wire Line
+	4650 4450 4650 4250
+Wire Wire Line
+	4650 4250 4500 4250
+Connection ~ 4500 4250
+Wire Wire Line
+	4500 4250 4500 4150
+$Comp
+L Device:R R13
+U 1 1 61A7C229
+P 4500 5550
+F 0 "R13" H 4570 5596 50  0000 L CNN
+F 1 "18k" H 4570 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 5550 50  0001 C CNN
+F 3 "~" H 4500 5550 50  0001 C CNN
+	1    4500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 61A8366A
+P 4500 6100
+F 0 "#PWR07" H 4500 5850 50  0001 C CNN
+F 1 "GND" H 4505 5927 50  0000 C CNN
+F 2 "" H 4500 6100 50  0001 C CNN
+F 3 "" H 4500 6100 50  0001 C CNN
+	1    4500 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3700 4500 3850
+Wire Wire Line
+	4100 3700 4500 3700
+Connection ~ 4100 3700
+Wire Wire Line
+	4500 4600 4500 5300
+Text GLabel 4250 5300 0    50   Input ~ 0
+Vref2
+Wire Wire Line
+	4250 5300 4500 5300
+Connection ~ 4500 5300
+Wire Wire Line
+	4500 5300 4500 5400
+Connection ~ 4500 3700
+Text GLabel 5300 3700 2    50   Input ~ 0
+Vout
+Wire Notes Line
+	5750 6500 500  6500
+Wire Notes Line
+	500  3400 5750 3400
+Wire Notes Line
+	5750 3400 5750 6500
+Wire Notes Line
+	500  3400 500  6500
+Text Notes 3850 6300 2    50   ~ 10
+Circuitul de protectie + ERS +Reteaua de Reactie\n
+Wire Notes Line
+	2200 3350 7100 3350
+Wire Notes Line
+	7100 550  7100 3350
+Wire Notes Line
+	2200 550  2200 3350
+Text Notes 1250 3300 0    50   ~ 10
+Referinta de tensiune\n
+$Comp
+L power:GND #PWR011
+U 1 1 61AD2E29
+P 6150 4150
+F 0 "#PWR011" H 6150 3900 50  0001 C CNN
+F 1 "GND" H 6155 3977 50  0000 C CNN
+F 2 "" H 6150 4150 50  0001 C CNN
+F 3 "" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 4050 0    50   Input ~ 0
+Vout
+Wire Wire Line
+	6150 4050 6050 4050
+$Comp
+L power:GND #PWR013
+U 1 1 61AFC83B
+P 4300 3000
+F 0 "#PWR013" H 4300 2750 50  0001 C CNN
+F 1 "GND" H 4305 2827 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1000 3150 2100
+Wire Wire Line
+	5250 1350 3950 1350
+Wire Wire Line
+	3950 1000 3950 1350
+Connection ~ 3950 1350
+Wire Wire Line
+	3950 1350 3950 1400
+$Comp
+L Connector:TestPoint TP_Vout1
+U 1 1 61B02066
+P 6250 5700
+F 0 "TP_Vout1" V 6204 5888 50  0000 L CNN
+F 1 "TestPoint" V 6295 5888 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6450 5700 50  0001 C CNN
+F 3 "~" H 6450 5700 50  0001 C CNN
+	1    6250 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP_Vref1
+U 1 1 61B0314E
+P 6250 5850
+F 0 "TP_Vref1" V 6204 6038 50  0000 L CNN
+F 1 "TestPoint" V 6295 6038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6450 5850 50  0001 C CNN
+F 3 "~" H 6450 5850 50  0001 C CNN
+	1    6250 5850
+	0    1    1    0   
+$EndComp
+Text GLabel 6200 5700 0    50   Input ~ 0
+Vout
+Wire Wire Line
+	6200 5700 6250 5700
+Text GLabel 6150 5850 0    50   Input ~ 0
+Vref
+Wire Wire Line
+	6250 5850 6150 5850
+Text GLabel 3500 3650 1    50   Input ~ 0
+Vrsc1
+Wire Wire Line
+	3500 3650 3500 3700
+Text GLabel 4100 3650 1    50   Input ~ 0
+Vrsc2
+Wire Wire Line
+	4100 3700 4100 3650
+$Comp
+L power:VDC #PWR0101
+U 1 1 61B53035
+P 700 3700
+F 0 "#PWR0101" H 700 3600 50  0001 C CNN
+F 1 "VDC" H 715 3873 50  0000 C CNN
+F 2 "" H 700 3700 50  0001 C CNN
+F 3 "" H 700 3700 50  0001 C CNN
+	1    700  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDC #PWR0102
+U 1 1 61B865BF
+P 6200 3600
+F 0 "#PWR0102" H 6200 3500 50  0001 C CNN
+F 1 "VDC" H 6215 3773 50  0000 C CNN
+F 2 "" H 6200 3600 50  0001 C CNN
+F 3 "" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61B874F2
+P 7000 3700
+F 0 "#PWR0103" H 7000 3450 50  0001 C CNN
+F 1 "GND" H 7005 3527 50  0000 C CNN
+F 2 "" H 7000 3700 50  0001 C CNN
+F 3 "" H 7000 3700 50  0001 C CNN
+	1    7000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3700 5300 3700
+Wire Wire Line
+	4500 5700 4500 6100
+$Comp
+L Connector:TestPoint VCC1
+U 1 1 61AB1DB9
+P 7450 3550
+F 0 "VCC1" V 7404 3738 50  0000 L CNN
+F 1 "TestPoint" V 7495 3738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7650 3550 50  0001 C CNN
+F 3 "~" H 7650 3550 50  0001 C CNN
+	1    7450 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint GND1
+U 1 1 61AB1DBF
+P 7450 3700
+F 0 "GND1" V 7404 3888 50  0000 L CNN
+F 1 "TestPoint" V 7495 3888 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7650 3700 50  0001 C CNN
+F 3 "~" H 7650 3700 50  0001 C CNN
+	1    7450 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3550 6300 3550
+Wire Wire Line
+	6300 3550 6300 3600
+Wire Wire Line
+	6300 3600 6200 3600
+Wire Wire Line
+	7000 3700 7450 3700
+$Comp
+L Connector:TestPoint Vout1
+U 1 1 61AC6CA8
+P 6400 4000
+F 0 "Vout1" V 6354 4188 50  0000 L CNN
+F 1 "TestPoint" V 6445 4188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4000 50  0001 C CNN
+F 3 "~" H 6600 4000 50  0001 C CNN
+	1    6400 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint GND_OUT1
+U 1 1 61AC6CAE
+P 6400 4150
+F 0 "GND_OUT1" V 6354 4338 50  0000 L CNN
+F 1 "TestPoint" V 6445 4338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4150 50  0001 C CNN
+F 3 "~" H 6600 4150 50  0001 C CNN
+	1    6400 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 4000 6150 4000
+Wire Wire Line
+	6150 4000 6150 4050
+Wire Wire Line
+	6400 4150 6150 4150
+$Comp
+L Connector:TestPoint GND2
+U 1 1 61ACC641
+P 6300 4600
+F 0 "GND2" V 6254 4788 50  0000 L CNN
+F 1 "TestPoint" V 6345 4788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6500 4600 50  0001 C CNN
+F 3 "~" H 6500 4600 50  0001 C CNN
+	1    6300 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61ACFBE1
+P 6300 4650
+F 0 "#PWR0104" H 6300 4400 50  0001 C CNN
+F 1 "GND" H 6305 4477 50  0000 C CNN
+F 2 "" H 6300 4650 50  0001 C CNN
+F 3 "" H 6300 4650 50  0001 C CNN
+	1    6300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4650 6300 4600
+$EndSCHEMATC
